@@ -1,9 +1,9 @@
 :root {
     --navy: #031A42;
     --white: #fff;
-    --blue: #E2B167;
-    --softgray: #F3F5F7;
-    --softgray2: #CCD8E1;
+    --blue: #6794e2;
+    --softgray: #70ace9;
+    --softgray2: #2489d7;
     --gray: #727379;
     --fwbold: 700;
     --fwextrabold: 800;
@@ -15,6 +15,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
 }
 
 a {
@@ -22,39 +23,42 @@ a {
 }
 
 .mb-10 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .mb-50 {
     margin-bottom: 50px;
 }
 
-.mb-70 {
-    margin-bottom: 30px;
-}
-
-
 .jumbo-header {
     font-weight: var(--fwextrabold);
     color: var(--navy);
     font-size: 48px;
- 
+}
+
+.big-header {
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    font-size: 28px;
+}
+
+.small-header {
+    font-weight: var(--fwbold);
+    color: var(--navy);
+    font-size: 18px;
 }
 
 .paragraph {
     line-height: 36px;
     color: var(--gray);
     font-size: 18px;
- 
 }
 
-
-.small-paragraph {
-    color: var(--gray);
-    font-size: 14px;
-    font-weight: var(--fwsemibold);
+.paragraph2 {
+    color: var(--navy);
+    font-weight: var(--fwregular);
+    font-size: 16px;
 }
-
 
 .btn-secondary {
     padding: 14px 24px 14px 24px;
@@ -66,16 +70,31 @@ a {
 }
 
 .btn-primary {
-    padding: 14px 24px 14px 24px;
+    padding: 14px 24px;
     border-radius: 50px;
     border: 0;
     background: var(--blue);
     color: var(--white);
     font-weight: var(--fwbold);
 }
-.footer{
-    background-color: #031A42;
-    text-align: center;
+
+.house-details .header h3 {
+    margin-top: 3px;
+    float: right;
+    margin-left: 10px;
 }
 
-  
+.house-details .house-informations .booking {
+    padding: 25px;
+    border: 1px solid var(--softgray2);
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .jumbo-header {
+        font-size: 32px;
+    }
+    .small-header {
+        font-size: 16px;
+    }
+}
